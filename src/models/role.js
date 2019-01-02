@@ -9,8 +9,7 @@ module.exports = (sequelize, DataTypes) => {
   });
   role.USER_ROLE = {
     admin: 1,
-    staff: 2,
-    student: 3,
+    student: 2,
   };
   role.associate = (models) => {
     role.hasMany(models.user,

@@ -1,37 +1,36 @@
 'use strict';
 module.exports = {
   up: function(queryInterface, Sequelize) {
-    return queryInterface.createTable('users', {
+    return queryInterface.createTable('contact_details', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.UUID
       },
-      firstName: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      lastName: {
+      mobileNo1: {
         type: Sequelize.STRING
       },
-      shortName: {
+      mobileNo2: {
         type: Sequelize.STRING
       },
-      userName: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      password: {
+      homePhone: {
         type: Sequelize.STRING
       },
-      roleId: {
-        type: Sequelize.INTEGER,
-        references: {
-          key: 'id',
-          model: 'roles',
-          as: 'roleId'
-        }
+      officePhone: {
+        type: Sequelize.STRING
+      },
+      email: {
+        type: Sequelize.STRING
+      },
+      fbUrl: {
+        type: Sequelize.STRING
+      },
+      linkedinUrl: {
+        type: Sequelize.STRING
+      },
+      skypeId: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
@@ -44,6 +43,6 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('users');
+    return queryInterface.dropTable('contact_details');
   }
 };

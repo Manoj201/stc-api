@@ -3,15 +3,19 @@ const bcrypt = require('bcryptjs');
 
 module.exports = (sequelize, DataTypes) => {
   let user = sequelize.define('user', {
-    name: {
+    firstName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
+    lastName: {
       type: DataTypes.STRING,
-      set(email) {
-        this.setDataValue('email', email.toLowerCase());
-      },
+    },
+    shortName: {
+      type: DataTypes.STRING,
+    },
+    userName: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     password: {
       type: DataTypes.STRING,
@@ -24,6 +28,9 @@ module.exports = (sequelize, DataTypes) => {
   user.associate = (models) => {
     user.belongsTo(models.role,
       {foreignKey: {name: 'roleId'}}
+    );
+    user.belongsTo(models.contactDetail,
+      {foreignKey: {name: 'contactDetailId'}}
     );
   };
   return user;
