@@ -35,6 +35,9 @@ module.exports = (sequelize, DataTypes) => {
     contactDetail.belongsTo(models.address,
       {foreignKey: {name: 'addressId'}}
     );
+    contactDetail.belongsTo(models.jobDetail,
+      {foreignKey: {name: 'jobDetailId'}}
+    );
   };
   return contactDetail;
 };

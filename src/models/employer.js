@@ -11,6 +11,9 @@ module.exports = (sequelize, DataTypes) => {
     employer.hasMany(models.branch,
       {foreignKey: {name: 'employerId'}}
     );
+    employer.hasMany(models.jobDetail,
+      {foreignKey: {name: 'employerId'}}
+    );
   };
 
   return employer;

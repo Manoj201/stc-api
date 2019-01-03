@@ -13,6 +13,9 @@ module.exports = (sequelize, DataTypes) => {
     branch.belongsTo(models.employer,
       {foreignKey: {name: 'employerId'}}
     );
+    branch.hasMany(models.jobDetail,
+      {foreignKey: {name: 'branchId'}}
+    );
   };
   return branch;
 };
