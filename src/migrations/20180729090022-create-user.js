@@ -36,7 +36,7 @@ module.exports = {
         type: Sequelize.UUID,
         references: {
           key: 'id',      // primary key of the referenced table
-          model: 'contact_details', // database table name
+          model: 'contactDetails', // database table name
           as: 'contactDetailId'   // given foreign key
         }
       },
