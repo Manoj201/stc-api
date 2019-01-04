@@ -4,6 +4,8 @@ import HttpStatus from 'http-status-codes';
 import {userService} from '../servicess';
 import errorFactory from '../../util/errorFactory';
 
+const uuidv1 = require('uuid/v1');
+
 const userOperations = {
 
   getById: async (req, res, next) => {
@@ -26,8 +28,11 @@ const userOperations = {
   create: async (req, res, next) => {
     try {
       const userData = {
-        name: req.body.name,
-        email: req.body.email,
+        id: uuidv1(),
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        shortName: req.body.shortName,
+        userName: req.body.userName,
         password: req.body.password,
         roleId: req.body.roleId,
       };

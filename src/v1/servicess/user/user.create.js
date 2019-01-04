@@ -7,9 +7,9 @@ const userModel = models.user;
 const create = async (userData) => {
   let payload = {};
   const existUser = await userModel.find({
-    attributes: ['email'],
+    attributes: ['userName'],
     where: {
-      email: userData.email,
+      userName: userData.userName,
     },
   });
   if (existUser) {

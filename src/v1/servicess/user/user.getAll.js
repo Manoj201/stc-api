@@ -6,13 +6,18 @@ const userModel = models.user;
 const getAll = () => {
   let query = {
     attributes: {
-      exclude: ['createdAt', 'updatedAt'],
+      exclude: ['createdAt', 'updatedAt', 'contactDetailId'],
     },
     include: [
       {
         model: models.role,
         attributes: ['id', 'name'],
-      }],
+      },
+      {
+        model: models.contactDetail,
+        attributes: ['id'],
+      },
+    ],
   };
   const userList = userModel.findAll(query);
   return userList;

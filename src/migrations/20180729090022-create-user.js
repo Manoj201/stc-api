@@ -32,7 +32,7 @@ module.exports = {
           as: 'roleId'   // given foreign key
         }
       },
-      contactDetailsId: {
+      contactDetailId: {
         type: Sequelize.UUID,
         references: {
           key: 'id',      // primary key of the referenced table

@@ -10,7 +10,7 @@ const authenticate = (req, res, next) => {
     const bearerToken = req.headers.authorization;
     if (bearerToken) {
       const token = bearerToken.split('Bearer ')[1];
-      const jwtPayload = jwt.verify(token, 'Fuck_You');
+      const jwtPayload = jwt.verify(token, 'stc_ob_09');
       if (jwtPayload) {
         next();
       }

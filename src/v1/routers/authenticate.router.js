@@ -2,14 +2,14 @@
 
 import express from 'express';
 
-import {authenticateOperation} from '../controllers';
+import {authenticateOperation, userOperations} from '../controllers';
 
 const router = express.Router();
 
 const authenticateRoutes = (sdpApp) => {
-  router.route('/').post(authenticateOperation.autenticate);
-
-  sdpApp.use('/api/v1/login', router);
+  router.route('/login').post(authenticateOperation.autenticate);
+  router.route('/create_account').post(userOperations.create);
+  sdpApp.use('/api/v1', router);
 };
 
 export default authenticateRoutes;

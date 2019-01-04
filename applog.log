@@ -54,3 +54,43 @@
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"User Unauthorized"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"User Unauthorized"}
+{"level":"error","message":"User Unauthorized"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"User Unauthorized"}
+{"level":"error","message":"User Unauthorized"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"User Unauthorized"}
+{"level":"error","message":"column \"email\" does not exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Invalid salt version: st"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Invalid salt version: my"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"null value in column \"id\" violates not-null constraint"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Exist"}
+{"level":"error","message":"column \"contactDetailId\" does not exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"column \"contactDetailId\" does not exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"User Unauthorized"}
+{"level":"error","message":"invalid signature"}
+{"level":"error","message":"invalid signature"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"column user.contactDetailId does not exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"column user.contactDetailId does not exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"User Unauthorized"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}

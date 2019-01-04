@@ -6,7 +6,7 @@ const userModel = models.user;
 const getById = (id) => {
   let query = {
     attributes: {
-      exclude: ['createdAt', 'updatedAt'],
+      exclude: ['createdAt', 'updatedAt', 'contactDetailId'],
     },
     include: [
       {

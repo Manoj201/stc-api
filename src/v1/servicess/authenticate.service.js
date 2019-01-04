@@ -5,13 +5,13 @@ import jwt from 'jsonwebtoken';
 import models from '../../models';
 const userModel = models.user;
 
-const authenticate = async (email, password) => {
+const authenticate = async (userName, password) => {
   let result = {};
   let query = {
     attributes: {
-      exclude: ['createdAt', 'updatedAt'],
+      exclude: ['createdAt', 'updatedAt', 'contactDetailId'],
     },
-    where: {email},
+    where: {userName},
   };
   const user = await userModel.findOne(query);
   if (user !== null) {
@@ -21,7 +21,7 @@ const authenticate = async (email, password) => {
       userObj.id= user.id;
       userObj.name= user.name;
       result.user = userObj;
-      result.token = jwt.sign({email, id: user.id}, 'Fuck_You', {expiresIn: 86400});
+      result.token = jwt.sign({userName, id: user.id}, 'stc_ob_09', {expiresIn: 86400});
     }
   }
   return result;

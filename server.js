@@ -12,8 +12,8 @@ import errorFactory from './src/util/errorFactory';
 import models from './src/models';
 import middlewares from './src/middlewares';
 
-const sdpApp = express();
-sdpApp.listenAsync = Promise.promisify(sdpApp.listen).bind(sdpApp);
+const app = express();
+app.listenAsync = Promise.promisify(app.listen).bind(app);
 
 const registerApi = (sdpApp) => {
   authenticateRoutes(sdpApp);
@@ -29,12 +29,12 @@ const registerGlobalErrorHandler = (sdpApp) => {
 };
 
 init();
-middlewares.configure(sdpApp);
-registerApi(sdpApp);
-registerGlobalErrorHandler(sdpApp);
+middlewares.configure(app);
+registerApi(app);
+registerGlobalErrorHandler(app);
 
 models.sequelize.sync({}).then(() => {
-  sdpApp.listen(config.port, () => {
+  app.listen(config.port, () => {
     logger.info(`SDP API started and listening on port ${config.port}`);
   });
 });
