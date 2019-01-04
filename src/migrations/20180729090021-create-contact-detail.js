@@ -31,6 +31,22 @@ module.exports = {
       skypeId: {
         type: Sequelize.STRING
       },
+      addressId: {
+        type: Sequelize.UUID,
+        references: {
+          key: 'id',      // primary key of the referenced table
+          model: 'address', // database table name
+          as: 'addressId'   // given foreign key
+        }
+      },
+      jobDetailId: {
+        type: Sequelize.UUID,
+        references: {
+          key: 'id',      // primary key of the referenced table
+          model: 'jobDetails', // database table name
+          as: 'jobDetailId'   // given foreign key
+        }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

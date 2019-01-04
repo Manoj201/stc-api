@@ -25,11 +25,19 @@ module.exports = {
         type: Sequelize.STRING
       },
       roleId: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.UUID,
         references: {
-          key: 'id',
-          model: 'roles',
-          as: 'roleId'
+          key: 'id',      // primary key of the referenced table
+          model: 'roles', // database table name
+          as: 'roleId'   // given foreign key
+        }
+      },
+      contactDetailsId: {
+        type: Sequelize.UUID,
+        references: {
+          key: 'id',      // primary key of the referenced table
+          model: 'contact_details', // database table name
+          as: 'contactDetailId'   // given foreign key
         }
       },
       createdAt: {

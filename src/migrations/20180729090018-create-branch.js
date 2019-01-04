@@ -13,6 +13,14 @@ module.exports = {
       town: {
         type: Sequelize.STRING
       },
+      employerId: {
+        type: Sequelize.UUID,
+        references: {
+          key: 'id',      // primary key of the referenced table
+          model: 'employers', // database table name
+          as: 'employerId'   // given foreign key
+        }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
