@@ -24,7 +24,9 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
 
-  }, {});
+  }, {
+    freezeTableName: true,
+  });
   user.associate = (models) => {
     user.belongsTo(models.role,
       {foreignKey: {name: 'roleId'}}

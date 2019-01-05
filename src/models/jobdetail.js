@@ -2,6 +2,8 @@
 
 module.exports = (sequelize, DataTypes) => {
   let jobDetail = sequelize.define('jobDetail', {
+  }, {
+    freezeTableName: true,
   });
 
   jobDetail.associate = (models) => {

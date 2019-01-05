@@ -29,14 +29,18 @@ module.exports = (sequelize, DataTypes) => {
     skypeId: {
       type: DataTypes.STRING,
     },
-  }, {});
+  },
+  {
+    freezeTableName: true,
+  },
+  );
 
   contactDetail.associate = (models) => {
     contactDetail.belongsTo(models.address,
-      {foreignKey: {name: 'addressId'}}
+      {foreignKey: {name: 'addressId'}},
     );
     contactDetail.belongsTo(models.jobDetail,
-      {foreignKey: {name: 'jobDetailId'}}
+      {foreignKey: {name: 'jobDetailId'}},
     );
   };
   return contactDetail;

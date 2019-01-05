@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: function(queryInterface, Sequelize) {
-    return queryInterface.createTable('contactDetails', {
+    return queryInterface.createTable('contactDetail', {
       id: {
         allowNull: false,
         primaryKey: true,
@@ -43,7 +43,7 @@ module.exports = {
         type: Sequelize.UUID,
         references: {
           key: 'id',      // primary key of the referenced table
-          model: 'jobDetails', // database table name
+          model: 'jobDetail', // database table name
           as: 'jobDetailId'   // given foreign key
         }
       },
@@ -58,6 +58,6 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('contactDetails');
+    return queryInterface.dropTable('contactDetail', {});
   }
 };

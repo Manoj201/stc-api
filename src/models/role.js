@@ -6,6 +6,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       unique: true,
     },
+  }, {
+    freezeTableName: true,
   });
   role.USER_ROLE = {
     admin: 1,

@@ -6,6 +6,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       unique: true,
     },
+  }, {
+    freezeTableName: true,
   });
 
   occupation.associate = (models) => {

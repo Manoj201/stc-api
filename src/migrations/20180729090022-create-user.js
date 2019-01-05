@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: function(queryInterface, Sequelize) {
-    return queryInterface.createTable('users', {
+    return queryInterface.createTable('user', {
       id: {
         allowNull: false,
         primaryKey: true,
@@ -25,10 +25,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       roleId: {
-        type: Sequelize.UUID,
+        type: Sequelize.INTEGER,
         references: {
           key: 'id',      // primary key of the referenced table
-          model: 'roles', // database table name
+          model: 'role', // database table name
           as: 'roleId'   // given foreign key
         }
       },
@@ -36,7 +36,7 @@ module.exports = {
         type: Sequelize.UUID,
         references: {
           key: 'id',      // primary key of the referenced table
-          model: 'contactDetails', // database table name
+          model: 'contactDetail', // database table name
           as: 'contactDetailId'   // given foreign key
         }
       },
@@ -51,6 +51,6 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('users');
+    return queryInterface.dropTable('user');
   }
 };

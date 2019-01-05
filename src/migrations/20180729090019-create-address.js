@@ -30,6 +30,6 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('address');
+    return queryInterface.dropTable('address', {});
   }
 };

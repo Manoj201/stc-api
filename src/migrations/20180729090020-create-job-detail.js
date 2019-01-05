@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: function(queryInterface, Sequelize) {
-    return queryInterface.createTable('jobDetails', {
+    return queryInterface.createTable('jobDetail', {
       id: {
         allowNull: false,
         primaryKey: true,
@@ -11,7 +11,7 @@ module.exports = {
         type: Sequelize.UUID,
         references: {
           key: 'id',      // primary key of the referenced table
-          model: 'occupations', // database table name
+          model: 'occupation', // database table name
           as: 'occupationId'   // given foreign key
         }
       },
@@ -19,7 +19,7 @@ module.exports = {
         type: Sequelize.UUID,
         references: {
           key: 'id',      // primary key of the referenced table
-          model: 'employers', // database table name
+          model: 'employer', // database table name
           as: 'employerId'   // given foreign key
         }
       },
@@ -27,7 +27,7 @@ module.exports = {
         type: Sequelize.UUID,
         references: {
           key: 'id',      // primary key of the referenced table
-          model: 'branches', // database table name
+          model: 'branch', // database table name
           as: 'branchId'   // given foreign key
         }
       },
@@ -42,6 +42,6 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('jobDetails');
+    return queryInterface.dropTable('jobDetail', {});
   }
 };

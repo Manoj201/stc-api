@@ -35,8 +35,14 @@ const userOperations = {
         userName: req.body.userName,
         password: req.body.password,
         roleId: req.body.roleId,
+        contactDetail: {
+          id: uuidv1(),
+        },
       };
-      const data = await userService.create(userData);
+      const addressData = {
+        id: uuidv1(),
+      };
+      const data = await userService.create(userData, addressData);
       data.status === HttpStatus.CREATED ?
         res.status(HttpStatus.CREATED).json(data.result) : next(errorFactory.conflict(req.traceId));
     } catch (error) {

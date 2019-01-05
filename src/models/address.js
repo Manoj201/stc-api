@@ -13,6 +13,9 @@ module.exports = (sequelize, DataTypes) => {
     city: {
       type: DataTypes.STRING,
     },
+  },
+  {
+    freezeTableName: true,
   });
   return address;
 };

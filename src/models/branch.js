@@ -8,13 +8,16 @@ module.exports = (sequelize, DataTypes) => {
     town: {
       type: DataTypes.STRING,
     },
+  },
+  {
+    freezeTableName: true,
   });
   branch.associate = (models) => {
     branch.belongsTo(models.employer,
-      {foreignKey: {name: 'employerId'}}
+      {foreignKey: {name: 'employerId'}},
     );
     branch.hasMany(models.jobDetail,
-      {foreignKey: {name: 'branchId'}}
+      {foreignKey: {name: 'branchId'}},
     );
   };
   return branch;

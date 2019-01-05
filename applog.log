@@ -1,96 +1,67 @@
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"i is not defined"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"i is not defined"}
+{"level":"error","message":"invalid input syntax for integer: \"3593adf0-1011-11e9-9471-2dbd70fb63df\""}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"i is not defined"}
-{"level":"error","message":"i is not defined"}
+{"level":"error","message":"Cannot read property 'rollback' of undefined"}
+{"level":"error","message":"Cannot read property 'rollback' of undefined"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"jwt expired"}
-{"level":"error","message":"jwt expired"}
-{"level":"error","message":"jwt expired"}
-{"level":"error","message":"jwt expired"}
+{"level":"error","message":"Cannot read property 'rollback' of undefined"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"Not Found"}
-{"level":"error","message":"Not Found"}
+{"level":"error","message":"Cannot read property 'rollback' of undefined"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"attr.indexOf is not a function"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"transaction.rollback is not a function"}
+{"level":"error","message":"transaction.rollback is not a function"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"level":"error","message":"Exist"}
 {"level":"error","message":"Exist"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"level":"error","message":"Exist"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"jwt expired"}
-{"level":"error","message":"jwt expired"}
-{"level":"error","message":"jwt expired"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"jwt expired"}
-{"level":"error","message":"_servicess.userService.findById is not a function"}
-{"level":"error","message":"_servicess.userService.findById is not a function"}
-{"level":"error","message":"_servicess.userService.findById is not a function"}
+{"level":"error","message":"Exist"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Cannot read property 'find' of undefined"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"invalid input syntax for integer: \"1s\""}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"User Unauthorized"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"User Unauthorized"}
-{"level":"error","message":"User Unauthorized"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"User Unauthorized"}
-{"level":"error","message":"User Unauthorized"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"User Unauthorized"}
-{"level":"error","message":"column \"email\" does not exist"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"Invalid salt version: st"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"Invalid salt version: my"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"null value in column \"id\" violates not-null constraint"}
+{"level":"error","message":"transaction.rollback is not a function"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"level":"error","message":"Exist"}
-{"level":"error","message":"column \"contactDetailId\" does not exist"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"column \"contactDetailId\" does not exist"}
+{"level":"error","message":"Exist"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"_models2.default.transaction is not a function"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"User Unauthorized"}
-{"level":"error","message":"invalid signature"}
-{"level":"error","message":"invalid signature"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"column user.contactDetailId does not exist"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"column user.contactDetailId does not exist"}
+{"level":"error","message":"Exist"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Cannot read property 'supports' of undefined"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Cannot read property 'supports' of undefined"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"User Unauthorized"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Cannot set property 'id' of undefined"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"user is not defined"}
+{"level":"error","message":"invalid input syntax for integer: \"1aas\""}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"invalid input syntax for integer: \"1aas\""}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"user is not defined"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Exist"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
