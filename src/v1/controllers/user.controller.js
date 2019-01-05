@@ -1,10 +1,9 @@
 'use strict';
 import HttpStatus from 'http-status-codes';
+import uuidv1 from 'uuid/v1';
 
 import {userService} from '../servicess';
 import errorFactory from '../../util/errorFactory';
-
-const uuidv1 = require('uuid/v1');
 
 const userOperations = {
 

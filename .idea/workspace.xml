@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b188d2d3-73ba-4ad3-8fdd-8e48f1ba8354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applog.log" beforeDir="false" afterPath="$PROJECT_DIR$/applog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20180729090015-create-role.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20180729090015-create-role.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20180729090016-create-occupation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20180729090016-create-occupation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20180729090017-create-employer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20180729090017-create-employer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20180729090018-create-branch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20180729090018-create-branch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20180729090019-create-address.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20180729090019-create-address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20180729090020-create-job-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20180729090020-create-job-detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20180729090021-create-contact-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20180729090021-create-contact-detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20180729090022-create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20180729090022-create-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/branch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/branch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/contactdetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contactdetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/employer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/employer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/jobdetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/jobdetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/occupation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/occupation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/role.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seeders/20190103105618-role.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/20190103105618-role.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seeders/20190104063806-demo-occupations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/20190104063806-demo-occupations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seeders/20190104070223-demo-employers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeders/20190104070223-demo-employers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/v1/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/v1/controllers/user.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/v1/servicess/user/user.create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/v1/servicess/user/user.create.js" afterDir="false" />
     </list>
@@ -72,7 +50,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="js" value="2462" />
+          <entry key="js" value="2463" />
           <entry key="json" value="56" />
           <entry key="md" value="2" />
         </counts>
@@ -80,7 +58,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="56" />
-          <entry key="JavaScript" value="2462" />
+          <entry key="JavaScript" value="2463" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
@@ -95,14 +73,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/v1/servicess/user/user.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-              <folding>
-                <element signature="e#14#57#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="40">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -111,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/src/migrations/20180729090021-create-contact-detail.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -161,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/v1/controllers/user.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state relative-caret-position="100">
+              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
               <folding>
                 <element signature="e#14#57#0" expanded="true" />
               </folding>
@@ -235,10 +210,10 @@
         <option value="$PROJECT_DIR$/src/migrations/20180729090021-create-contact-detail.js" />
         <option value="$PROJECT_DIR$/src/models/contactdetail.js" />
         <option value="$PROJECT_DIR$/src/models/index.js" />
-        <option value="$PROJECT_DIR$/src/v1/controllers/user.controller.js" />
         <option value="$PROJECT_DIR$/src/migrations/20180729090022-create-user.js" />
         <option value="$PROJECT_DIR$/src/models/user.js" />
         <option value="$PROJECT_DIR$/src/v1/servicess/user/user.create.js" />
+        <option value="$PROJECT_DIR$/src/v1/controllers/user.controller.js" />
       </list>
     </option>
   </component>
@@ -342,18 +317,18 @@
       <workItem from="1546582840142" duration="13927000" />
       <workItem from="1546661679753" duration="7154000" />
       <workItem from="1546673118550" duration="3128000" />
-      <workItem from="1546696686946" duration="968000" />
+      <workItem from="1546696686946" duration="1114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37959000" />
+    <option name="totallyTimeSpent" value="38105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960506" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -367,7 +342,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23472668" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23472668" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -705,16 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/v1/controllers/user.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="e#14#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/jobdetail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -732,7 +697,7 @@
     <entry file="file://$PROJECT_DIR$/src/migrations/20180729090021-create-contact-detail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -752,8 +717,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/v1/servicess/user/user.create.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/v1/controllers/user.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
           <folding>
             <element signature="e#14#57#0" expanded="true" />
           </folding>

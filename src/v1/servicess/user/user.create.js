@@ -4,8 +4,6 @@ import uuidv1 from 'uuid/v1';
 
 import models from '../../../models';
 
-
-// const uuidv1 = require('uuid/v1');
 const userModel = models.user;
 const addressModel = models.address;
 const contactDetailsModel = models.contactDetail;
