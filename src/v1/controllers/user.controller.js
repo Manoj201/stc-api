@@ -44,6 +44,23 @@ const userOperations = {
     data.status === HttpStatus.OK ?
       res.status(HttpStatus.OK).json(data.result) : next(errorFactory[NOT_FOUND](req.traceId));
   },
+  updateContactDetails: async (req, res, next) => {
+    const {mobileNo1, mobileNo2, homePhone, officePhone, email, fbUrl, linkedinUrl, skypeId} = req.body;
+    const {id} = req.params;
+    const contactDetailsData = {
+      mobileNo1,
+      mobileNo2,
+      homePhone,
+      officePhone,
+      email,
+      fbUrl,
+      linkedinUrl,
+      skypeId,
+    };
+    const data = await userService.updateContactDetails(contactDetailsData, id);
+    data.status === HttpStatus.OK ?
+      res.status(HttpStatus.OK).json(data.result) : next(errorFactory[NOT_FOUND](req.traceId));
+  },
 };
 
 export default userOperations;
