@@ -1,5 +1,5 @@
 'use strict';
-import HttpStatus from 'http-status-codes';
+import HttpStatus, {NOT_FOUND} from 'http-status-codes';
 import uuidv1 from 'uuid/v1';
 
 import {userService} from '../servicess';
@@ -8,12 +8,8 @@ import errorFactory from '../../util/errorFactory';
 const userOperations = {
 
   getById: async (req, res, next) => {
-    try {
-      const data = await userService.getById(req.params.id);
-      data ? res.status(HttpStatus.OK).json(data) : next(errorFactory.notFound(req.traceId));
-    } catch (error) {
-      next(error);
-    }
+    const data = await userService.getById(req.params.id);
+    data ? res.status(HttpStatus.OK).json(data) : next(errorFactory[NOT_FOUND](req.traceId));
   },
 
   getAll: async (req, res, next) => {
@@ -38,19 +34,15 @@ const userOperations = {
       res.status(HttpStatus.CREATED).json(data.result) : next(errorFactory[data.status](req.traceId));
   },
   update: async (req, res, next) => {
-    try {
-      const userData = {
-        id: req.params.id,
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
-        shortName: req.body.shortName,
-      };
-      const data = await userService.update(userData);
-      data.status === HttpStatus.OK ?
-        res.status(HttpStatus.OK).json(data.result) : next(errorFactory.notFound(req.traceId));
-    } catch (error) {
-      next(error);
-    }
+    const userData = {
+      id: req.params.id,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      shortName: req.body.shortName,
+    };
+    const data = await userService.update(userData);
+    data.status === HttpStatus.OK ?
+      res.status(HttpStatus.OK).json(data.result) : next(errorFactory[NOT_FOUND](req.traceId));
   },
 };
 
