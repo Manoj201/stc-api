@@ -10,6 +10,7 @@ const router = express.Router();
 const userRoutes = (sdpApp) => {
   router.route('/:id').get(userOperations.getById);
   router.route('/').get(userOperations.getAll);
+  router.route('/:id').put(userOperations.update);
   sdpApp.use('/api/v1/users', authenticate, router);
 };
 

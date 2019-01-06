@@ -25,25 +25,29 @@ const userOperations = {
     }
   },
   create: async (req, res, next) => {
+    const userData = {
+      id: uuidv1(),
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      userName: req.body.userName,
+      password: req.body.password,
+      roleId: req.body.roleId,
+    };
+    const data = await userService.create(userData);
+    data.status === HttpStatus.CREATED ?
+      res.status(HttpStatus.CREATED).json(data.result) : next(errorFactory[data.status](req.traceId));
+  },
+  update: async (req, res, next) => {
     try {
       const userData = {
-        id: uuidv1(),
+        id: req.params.id,
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         shortName: req.body.shortName,
-        userName: req.body.userName,
-        password: req.body.password,
-        roleId: req.body.roleId,
-        contactDetail: {
-          id: uuidv1(),
-        },
       };
-      const addressData = {
-        id: uuidv1(),
-      };
-      const data = await userService.create(userData, addressData);
-      data.status === HttpStatus.CREATED ?
-        res.status(HttpStatus.CREATED).json(data.result) : next(errorFactory.conflict(req.traceId));
+      const data = await userService.update(userData);
+      data.status === HttpStatus.OK ?
+        res.status(HttpStatus.OK).json(data.result) : next(errorFactory.notFound(req.traceId));
     } catch (error) {
       next(error);
     }

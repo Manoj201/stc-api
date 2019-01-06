@@ -1,5 +1,5 @@
 'use strict';
-import HttpStatus from 'http-status-codes';
+import {CREATED, INTERNAL_SERVER_ERROR, CONFLICT} from 'http-status-codes';
 import uuidv1 from 'uuid/v1';
 
 import models from '../../../models';
@@ -9,7 +9,7 @@ const addressModel = models.address;
 const contactDetailsModel = models.contactDetail;
 const jobDetailModel = models.jobDetail;
 
-const create = async (userData, addressData) => {
+const create = async (userData) => {
   let payload = {};
 
   const existUser = await userModel.find({
@@ -19,7 +19,7 @@ const create = async (userData, addressData) => {
     },
   });
   if (existUser) {
-    payload.status = HttpStatus.CONFLICT;
+    payload.status = CONFLICT;
   } else {
     const transaction = await models.sequelize.transaction();
     try {
@@ -44,10 +44,11 @@ const create = async (userData, addressData) => {
       }, {transaction});
 
       transaction.commit();
-      payload.status = HttpStatus.CREATED;
+      payload.status = CREATED;
       payload.result = user;
     } catch (e) {
       transaction.rollback();
+      payload.status = INTERNAL_SERVER_ERROR;
     }
   }
   return payload;

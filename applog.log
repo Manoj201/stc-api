@@ -65,3 +65,51 @@
 {"level":"error","message":"Exist"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"jwt expired"}
+{"level":"error","message":"Not Found"}
+{"level":"error","message":"Not Found"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Not Found"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Not Found"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Missing where attribute in the options parameter"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Missing where attribute in the options parameter"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Expected plain object, array or sequelize method in the options.where parameter"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Argument passed to findById is invalid: [object Object]"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Cannot read property 'indexOf' of undefined"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Cannot read property 'indexOf' of undefined"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Exist"}
+{"level":"error","message":"Exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Rsource Conflict"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Internal Server Error"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Internal Server Error"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Internal Server Error"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Internal Server Error"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"Internal Server Error"}
+{"message":"SDP API started and listening on port 3000","level":"info"}

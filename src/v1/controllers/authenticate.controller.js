@@ -10,7 +10,7 @@ const authenticateOperation = {
       const {userName, password} = req.body;
       const data = await authenticateService.authenticate(userName, password);
       data.token ? res.status(HttpStatus.OK).json(data) :
-        res.status(HttpStatus.UNAUTHORIZED).json(errorFactory.unAuthorized(req.traceId));
+        res.status(HttpStatus.UNAUTHORIZED).json(errorFactory[HttpStatus.UNAUTHORIZED](req.traceId));
     } catch (error) {
       next(error);
     }
