@@ -1,5 +1,5 @@
 'use strict';
-import HttpStatus from 'http-status-codes';
+import HttpStatus, {UNAUTHORIZED} from 'http-status-codes';
 import jwt from 'jsonwebtoken';
 
 import errorFactory from '../util/errorFactory';
@@ -15,12 +15,12 @@ const authenticate = (req, res, next) => {
         next();
       }
     } else {
-      const error = errorFactory.unAuthorized(req.traceId);
+      const error = errorFactory[UNAUTHORIZED](req.traceId);
       logger.error(error.message, {token: req.traceId});
       res.status(HttpStatus.FORBIDDEN).json(error);
     }
   } catch (error) {
-    const err = errorFactory.unAuthorized(req.traceId);
+    const err = errorFactory[UNAUTHORIZED](req.traceId);
     logger.error(error.message, {token: req.traceId});
     res.status(HttpStatus.FORBIDDEN).json(err);
   }

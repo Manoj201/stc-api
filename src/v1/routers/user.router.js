@@ -12,6 +12,7 @@ const userRoutes = (sdpApp) => {
   router.route('/').get(userOperations.getAll);
   router.route('/:id').put(userOperations.update);
   router.route('/:id/contact_details').put(userOperations.updateContactDetails);
+  router.route('/:id/address').put(userOperations.updateAddress);
   sdpApp.use('/api/v1/users', authenticate, router);
 };
 

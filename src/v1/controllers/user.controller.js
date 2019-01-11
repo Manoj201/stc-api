@@ -4,6 +4,7 @@ import uuidv1 from 'uuid/v1';
 
 import {userService} from '../servicess';
 import errorFactory from '../../util/errorFactory';
+import updateAddress from '../servicess/user/user.updateAddress';
 
 const userOperations = {
 
@@ -42,7 +43,7 @@ const userOperations = {
     };
     const data = await userService.update(userData);
     data.status === HttpStatus.OK ?
-      res.status(HttpStatus.OK).json(data.result) : next(errorFactory[NOT_FOUND](req.traceId));
+      res.status(HttpStatus.OK).json(data.result) : next(errorFactory[data.status](req.traceId));
   },
   updateContactDetails: async (req, res, next) => {
     const {mobileNo1, mobileNo2, homePhone, officePhone, email, fbUrl, linkedinUrl, skypeId} = req.body;
@@ -59,7 +60,18 @@ const userOperations = {
     };
     const data = await userService.updateContactDetails(contactDetailsData, id);
     data.status === HttpStatus.OK ?
-      res.status(HttpStatus.OK).json(data.result) : next(errorFactory[NOT_FOUND](req.traceId));
+      res.status(HttpStatus.OK).json(data.result) : next(errorFactory[data.status](req.traceId));
+  },
+  updateAddress: async (req, res, next) => {
+    const {number, street, town, city} = req.body;
+    const addressData = {
+      number, street, town, city,
+    };
+    const {id: userId} = req.params;
+
+    const data = await userService.updateAddress(addressData, userId);
+    data.status === HttpStatus.OK ?
+      res.status(HttpStatus.OK).json(data.result) : next(errorFactory[data.status](req.traceId));
   },
 };
 
