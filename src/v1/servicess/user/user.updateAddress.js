@@ -3,10 +3,7 @@ import {OK, NOT_FOUND} from 'http-status-codes';
 
 import models from '../../../models';
 
-const userModel = models.user;
-const contactDetailsModel = models.contactDetail;
-const addressModel = models.address;
-
+const {user: userModel, contactDetail: contactDetailsModel, address: addressModel} = models;
 
 const updateAddress = async (addressData, userId) => {
   let payload = {};
