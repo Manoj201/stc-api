@@ -73,6 +73,17 @@ const userOperations = {
     data.status === HttpStatus.OK ?
       res.status(HttpStatus.OK).json(data.result) : next(errorFactory[data.status](req.traceId));
   },
+  updateJobDetail: async (req, res, next) => {
+    const {occupationId, employerId, branchId} = req.body;
+    const jobData = {
+      occupationId, employerId, branchId,
+    };
+    const {id: userId} = req.params;
+
+    const data = await userService.updateJobDetail(jobData, userId);
+    data.status === HttpStatus.OK ?
+      res.status(HttpStatus.OK).json(data.result) : next(errorFactory[data.status](req.traceId));
+  },
 };
 
 export default userOperations;
