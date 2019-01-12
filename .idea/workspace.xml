@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b188d2d3-73ba-4ad3-8fdd-8e48f1ba8354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/applog.log" beforeDir="false" afterPath="$PROJECT_DIR$/applog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +33,7 @@
           <entry key="js" value="307" />
           <entry key="json" value="5" />
           <entry key="log" value="6" />
-          <entry key="md" value="3" />
+          <entry key="md" value="4" />
           <entry key="ts" value="4" />
         </counts>
       </usages-collector>
@@ -41,7 +41,7 @@
         <counts>
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="307" />
-          <entry key="Markdown" value="3" />
+          <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="TypeScript" value="4" />
         </counts>
@@ -51,7 +51,7 @@
           <entry key="gitignore" value="2" />
           <entry key="js" value="4560" />
           <entry key="json" value="56" />
-          <entry key="md" value="2" />
+          <entry key="md" value="30" />
           <entry key="ts" value="1" />
         </counts>
       </usages-collector>
@@ -59,7 +59,7 @@
         <counts>
           <entry key="JSON" value="56" />
           <entry key="JavaScript" value="4560" />
-          <entry key="Markdown" value="2" />
+          <entry key="Markdown" value="30" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -104,11 +104,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/v1/servicess/user/user.getById.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="440">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="280">
+                <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -150,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/migrations/20190102145134-create-contact-detail.js" />
         <option value="$PROJECT_DIR$/src/migrations/20190102152934-create-employer.js" />
         <option value="$PROJECT_DIR$/src/migrations/20190102160137-create-branch.js" />
         <option value="$PROJECT_DIR$/src/migrations/20190103091924-create-occupation.js" />
@@ -201,6 +214,7 @@
         <option value="$PROJECT_DIR$/src/v1/controllers/user.controller.js" />
         <option value="$PROJECT_DIR$/src/v1/servicess/user/user.updateJobDetail.js" />
         <option value="$PROJECT_DIR$/src/v1/servicess/user/user.getById.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -330,18 +344,18 @@
       <workItem from="1546696686946" duration="1114000" />
       <workItem from="1546747554397" duration="8558000" />
       <workItem from="1547269334178" duration="78000" />
-      <workItem from="1547283727355" duration="1656000" />
+      <workItem from="1547283727355" duration="2192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54474000" />
+    <option name="totallyTimeSpent" value="55010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960506" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -355,7 +369,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23472668" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23472668" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -653,16 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/seeders/20190112051541-demo-branch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -758,8 +762,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/v1/servicess/user/user.getById.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="440">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="280">
+            <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
